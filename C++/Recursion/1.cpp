@@ -51,21 +51,67 @@ using ss = set<str>;
 
 #define amax(a, b) a = max(a, b)
 #define amin(a, b) a = min(a, b)
+#define mxele(v) *max_element(all(v))
+#define mnele(v) *min_element(all(v))
 
 #define rep(i, a, b) for(int i = a; i < b; i++)
 #define repeq(i, a, b) for (int i = a; i <= b; i++)
 #define reprev(i, b, a) for (int i = b - 1; i >= a; i--)
-#define repeach(a, b) for (auto& (a): (b))
+#define repeach(a, b) for (auto& a: b)
+
+
+
+// 1. factorial
+int fact(int n) {
+    if (n == 0 || n == 1) return 1;
+    else return n*fact(n - 1);
+}
+
+// 2. sum of the digits of a number n
+int sum_of_digs(int n) {
+    if (n < 10) return n;
+    return n % 10 + sum_of_digs(n / 10);
+}
+
+void rev_str(str s, int n) {
+    // n is the size of the string s
+    n--;
+    if (n == 0) {
+        putchar(s[n]);
+        return;
+    }
+    putchar(s[n]);
+    rev_str(s, n);
+}
+
+str rev_ord = "";
+bool is_pal(str s, int n) {
+    n--;
+    if (n == 0) {
+        rev_ord += s[n];
+        if (s == rev_ord) return true;
+        else return false;
+    }
+    rev_ord += s[n];
+    is_pal(s, n);
+}
+
 
 int main() {
  
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    int tc; cin >> tc;
-    while(tc--) {
-        
-    }
-    
+    // int n;cin >> n;
+    // cout << fact(n) << nl;
+    // cout << sum_of_digs(n) << nl;
+
+    // str s; cin >> s;
+    // rev_str(s, sz(s));   
+
+    // if(is_pal(s, sz(s))){
+    //     cout << "Palindrome";
+    // } else cout << "Not a palindrome!";
+
     return 0;
 }

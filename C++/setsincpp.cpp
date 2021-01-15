@@ -30,7 +30,7 @@ using sl = set<ll>;
 using ss = set<str>;
 
 #define fr first
-#define sc second
+#define sc second;
 
 #define sz(x) (x).size()
 #define bg(x) begin(x)
@@ -49,8 +49,8 @@ using ss = set<str>;
 #define lb lower_bound
 #define ub upper_bound
 
-#define amax(a, b) a = max(a, b)
-#define amin(a, b) a = min(a, b)
+#define amax a = max(a, b)
+#define amin a = min(a, b)
 
 #define rep(i, a, b) for(int i = a; i < b; i++)
 #define repeq(i, a, b) for (int i = a; i <= b; i++)
@@ -62,10 +62,22 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    int tc; cin >> tc;
-    while(tc--) {
-        
-    }
+    vi a = {1, 2, 3, 4, 5, 6, 7};
+    vi b = {3, 5, 6, 7, 8, 9};
+    vi c(sz(a) + sz(b));
+    sor(a); sor(b);
     
+    auto it = set_intersection(all(a), all(b), bg(c));
+    auto it = set_difference(all(a), all(b), bg(c));
+    auto it = set_union(all(a), all(b), bg(c));
+    auto it = set_symmetric_difference(all(a), all(b), bg(c));
+    
+    // for merging two sorted ranges:
+    // merge(all(a), all(b), bg(c));
+    
+    c.resize(it - bg(c));
+    // cout << sz(c);
+    repeach(i, c) cout << i << " "; cout << nl;
+
     return 0;
 }
