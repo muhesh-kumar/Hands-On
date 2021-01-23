@@ -1,0 +1,6 @@
+// Evaluation of Polynomial in O(n) using Horner's method
+ll horner(vector<ll> v, ll n, ll x) {
+    ll res = v[0];
+    rep(i, 1, n) res = res*x + v[i];
+    return res;
+}

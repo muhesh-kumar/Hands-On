@@ -1,0 +1,15 @@
+// ADJACENT CELLS of (i, j) 
+// where n is the number of rows
+// and m is the number of columns
+
+// Adjacent horizontal and vertical cells:
+j + 1 >= 0 && j + 1 < m
+j - 1 >= 0 && j - 1 < m
+i - 1 >= 0 && i - 1 < n
+i - 1 >= 0 && i - 1 < n
+
+// Adjacent diagonal cells:
+i + 1 >= 0 && i + 1 < n && j + 1 >= 0 && j + 1 < m
+i - 1 >= 0 && i - 1 < n && j - 1 >= 0 && j - 1 < m
+i + 1 >= 0 && i + 1 < n && j - 1 >= 0 && j - 1 < m
+i - 1 >= 0 && i - 1 < n && j + 1 >= 0 && j + 1 < m
