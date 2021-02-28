@@ -4,22 +4,27 @@ using namespace std;
 
 class A {
     public:
-        // A () {
+        // A() {
         //    cout << "Constructor is created!" << endl; 
         // }
         A (string a) {
             setName(a);
         }
-        
-        void setName (string x) {
+
+        // DESTUCTOR:
+        // ~ A() {
+        //     cout << "The ojbect is destroyed!" << endl;
+        // }
+
+        void setName(string x) {
             name = x;
         }
         
-        string getName () {
+        string getName() {
             return name;
         }
 
-        void printHello () {
+        void printHello() {
             cout << "Hello" << endl;
         }
     private:
@@ -27,7 +32,7 @@ class A {
 };
 
 
-int main () {
+int main() {
 
     A obj("Josh");
     cout << obj.getName() << endl;
@@ -44,3 +49,6 @@ int main () {
 // constructors don't return!
 // their name is same as the class name
 // They are created to initialzie class variables
+// the default constructor is the one without any parameters...and does the bare minimum job.
+// destuctors are called when the objects are destroyed.
+// we don't need to worry about destructors..
