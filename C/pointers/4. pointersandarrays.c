@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// arrays can be thought of as constant pointers
 
 int main() {
 

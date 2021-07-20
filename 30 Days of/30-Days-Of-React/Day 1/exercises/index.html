@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const rootElement = document.querySelector(".root");
+        
+        // 2. Write your name in a JSX element and store it in a name variable
+        const myName = <h1>Muhesh Kumar</h1>;
+        
+        // 3. Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable
+        // 1. Create a style object for the main JSX
+        const mainStyles = {
+            color: "green"
+        }
+        
+        const main = (
+            <main>
+                <div style={mainStyles}>
+                    {myName}
+                    <p>Country: India</p>
+                    <p>Title: Software Engineer</p>
+                    <p>Gender: Male</p>
+                    <p>Email: muhesh4102002@gmail.com</p>
+                    <p>Phone: +91 6380021718</p>
+                </div>
+            </main>
+        );
+
+        // 4. Write a footer JSX element
+        const footer = (
+            <footer>
+                <div>
+                    <p>Copyright Muhesh Kumar 2020</p>
+                </div>
+            </footer>
+        )
+        const app = (
+            <div>
+                {main}
+                {footer}
+            </div>
+        )
+        
+
+        ReactDOM.render(app, rootElement);
+    </script>
+  </body>
+</html>
