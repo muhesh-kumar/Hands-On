@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. JavaScript</title>
+</head>
+<body>
+  
+  <h1>I'm Mr. JavaScript</h1>
+  <a href="#" class="set">Set</a>
+  <a href="#" class="reset">Reset</a>
+
+  <script type="text/javascript">
+
+    const setter = document.querySelector(".set");
+    setter.addEventListener("click", function() {
+      const h1 = document.querySelector("h1");
+      h1.innerHTML = "I'm alive";
+    });
+    
+    const resetter = document.querySelector(".reset");
+    resetter.addEventListener("click", function() {
+      const h1 = document.querySelector("h1");
+      h1.innerHTML = "I'm Mr. JavaScript";
+    });
+
+  </script>
+</body>
+</html>
