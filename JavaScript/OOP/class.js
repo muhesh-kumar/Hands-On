@@ -37,6 +37,7 @@ person3.setScore = 4;
 console.log(person3.getScore);
 console.log(Person.favoriteSkill());
 
+// Inheritance
 class Student extends Person {
   constructor(firstName, lastName, age, country, city, gender = "Male") {
     super(firstName, lastName, age, country, city);
