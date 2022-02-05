@@ -10,7 +10,6 @@
 // const boxesArr6 = Array.from(boxes);
 // boxesArr6.forEach(cur => cur.style.backgroundColor = "dogerblue");
 
-
 // the problem with functions like forEach is that we cannot use jump statements in them
 
 const boxesArr5 = [1, 2, 3, 4, 5];
@@ -27,10 +26,9 @@ for (const i of boxesArr5) {
   console.log(i);
 }
 
-
 // ES5
 var ages = [12, 7, 8, 21, 14, 11];
-var full = ages.map(function(el) {
+var full = ages.map(function (el) {
   return el >= 18;
 });
 console.log(full);
@@ -38,5 +36,5 @@ console.log(full.indexOf(true));
 console.log(ages[full.indexOf(true)]);
 
 // ES6
-console.log(ages.findIndex(cur => cur >= 18));
-console.log(ages.find(i => i >= 18));
+console.log(ages.findIndex((cur) => cur >= 18));
+console.log(ages.find((i) => i >= 18));
