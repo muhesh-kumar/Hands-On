@@ -1,0 +1,16 @@
+{
+  "name": "node-crash-course",
+  "version": "1.0.0",
+  "description": "Node carsh course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Muhesh Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}
