@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.reading-image {
+  width: 35rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .reading-image {
+    display: none;
+  }
+}
