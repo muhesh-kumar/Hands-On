@@ -99,7 +99,6 @@ public class HelloWorld {
     
     // String line = scanner.nextLine();
     // System.out.println(line);
-    // 
    
     // Syntax for Conditionals and Loops are the same as in C/C++
   }

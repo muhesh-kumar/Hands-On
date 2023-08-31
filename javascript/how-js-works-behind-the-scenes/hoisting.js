@@ -1,4 +1,3 @@
-
 // HOISTING
 
 // Function Declarations

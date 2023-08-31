@@ -1,3 +1,17 @@
+/**
+
+Abstract Classes - cannot be instantitated
+Abstract Methods:
+  - have no method body
+  - need to be inside abstract classes or interfaces
+
+- Avoids code duplication and increases reusability
+- The purpose of an abstract class is to function as a base for a sublcass
+- Encapsulate some common functionality in one place and let sub classes implement differences
+
+**/
+
+
 package com.muheshkumar;
 
 public class Abstraction {
