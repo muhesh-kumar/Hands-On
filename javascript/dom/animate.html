@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .container {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      height: 500px;
+      width: 500px;
+      border: 3px solid black;
+    }
+    
+    .box {
+      float: left;
+      width: 75px;
+      height: 100px;
+      margin: 10px;
+      background: url('http://placekitten.com/g/75/100/') no-repeat;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+  </div>
+  
+  <script>
+    for (let i = 0; i < 20; i++) {
+      setTimeout(function() {
+        console.log(i);
+        const div = document.createElement("div");
+        div.setAttribute("class", "box"); // or do div.className = "box";
+        const container = document.querySelector(".container");
+        container.appendChild(div);
+      }, 500 * i);
+    }
+  </script>
+</body>
+</html>
